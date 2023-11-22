@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism and Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        .search-form {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .deal {
+            border: 1px solid #ccc;
+            padding: 1em;
+            margin-bottom: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .deal img {
+            max-width: 100%;
+            max-height: 100px;
+            margin-right: 1em;
+        }
+
+        .flight-search {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+
+        .flight-results {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .flight-card {
+            border: 1px solid #ccc;
+            padding: 1em;
+            margin: 1em;
+            max-width: 300px;
+        }
+
+        .flight-card img {
+            max-width: 100%;
+            max-height: 100px;
+            margin-bottom: 1em;
+        }
+
+        .flight-card a {
+            display: block;
+            text-align: center;
+            padding: 0.5em;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>Tourism and Ticket Booking</h1>
+        </header>
+
+        <nav>
+            <a href="C:\Users\TEJA\Desktop\tourisam.html">Home</a>
+            <a href="flight-search">Flights</a>
+            <a href="#">Hotels</a>
+            <a href="#">Tours</a>
+            <a href="#">Activities</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <section>
+            <div class="search-form">
+                <h2>Find Your Next Adventure</h2>
+                <form action="#" method="get">
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" required>
+                    
+                    <label for="dates">Travel Dates:</label>
+                    <input type="text" id="dates" name="dates" placeholder="Select dates" required>
+
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+            
+            <h2>Featured Deals</h2>
+
+            <div class="deal">
+                <img src="C:\Users\TEJA\Documents\eiffel.jpg" alt="Deal Image">
+                <div>
+                    <h3>Explore the Magic of Paris</h3>
+                    <p>Discover the beauty of the City of Lights with our exclusive package.</p>
+                    <p>Starting from 50k</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+
+            <div class="deal">
+                <img src="C:\Users\TEJA\Documents\goa.jpg" alt="Deal Image">
+                <div>
+                    <h3>Relax in Goa</h3>
+                    <p>Escape to the tropical cities and unwind on beautiful beaches.</p>
+                    <p>Starting from 15k</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+
+            <div class="deal">
+                <img src="C:\Users\TEJA\Documents\araku.jpg" alt="Deal Image">
+                <div>
+                    <h3>Peace of Nature Araku</h3>
+                    <p>Bordered by towering mountains and lush forests, the valley makes for an ideal spot to relax and nourish your soul.</p>
+                    <p>Starting from 5k</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flight-search">
+                <h2>Find Your Flight</h2>
+                <form action="#" method="get">
+                    <label for="departure">Departure:</label>
+                    <input type="text" id="departure" name="departure" required>
+                    
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" required>
+
+                    <label for="dates">Travel Dates:</label>
+                    <input type="text" id="dates" name="dates" placeholder="Select dates" required>
+
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+
+            <h2>Flight Results</h2>
+
+            <div class="flight-results">
+                <div class="flight-card">
+                    <img src="C:\Users\TEJA\Documents\flight photo.jpg" alt="Flight Image">
+                    <h3>Flight to Paris</h3>
+                    <p>Departure: New York</p>
+                    <p>Destination: Paris</p>
+                    <p>Price: 20k</p>
+                    <a href="#">Book Now</a>
+                </div>
+
+                <div class="flight-card">
+                    <img src="C:\Users\TEJA\Documents\ar.jpg" alt="Flight Image">
+                    <h3>Flight to Switzerland</h3>
+                    <p>Departure: Los Angeles</p>
+                    <p>Destination: Switzerland</p>
+                    <p>Price: 50k</p>
+                    <a href="#">Book Now</a>
+                </div>
+
+                <div class="flight-card">
+                    <img src="C:\Users\TEJA\Documents\is.jpg" alt="Flight Image">
+                    <h3>Flight to Hyderabad</h3>
+                    <p>Departure: Vishakapatnam</p>
+                    <p>Destination: Hyderabad</p>
+                    <p>Price: 6k</p>
+                    <a href="flight">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Tourism and Ticket Booking</p>
+        </footer>
+    </div>
+</body>
+</html>
